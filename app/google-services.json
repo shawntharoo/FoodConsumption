@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "586547514638",
+    "firebase_url": "https://foodconsumption-48821.firebaseio.com",
+    "project_id": "foodconsumption-48821",
+    "storage_bucket": "foodconsumption-48821.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586547514638:android:7ca8655d766641aec11b5f",
+        "android_client_info": {
+          "package_name": "com.example.foodconsumption"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586547514638-g2ghdg961v3pbc5rte2hr4774ni3t15c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foodconsumption",
+            "certificate_hash": "743a4eac5b507d473f4ac1084319fed755022825"
+          }
+        },
+        {
+          "client_id": "586547514638-oe7qp9scmmj8cltk3h9p95t1sfmdk54k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjyzrfLSdXrARrYcIVyEzGaAs3BtbZ9jI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586547514638-oe7qp9scmmj8cltk3h9p95t1sfmdk54k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

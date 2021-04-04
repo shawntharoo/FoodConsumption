@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_list_alt_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_foodbase"
+            android:icon="@drawable/ic_baseline_fastfood_24"
+            android:title="Food Base" />
+        <item
+            android:id="@+id/nav_scan"
+            android:icon="@drawable/ic_baseline_scanner_24"
+            android:title="Scan" />
+        <item
+            android:id="@+id/nav_chart"
+            android:icon="@drawable/ic_baseline_insert_chart_24"
+            android:title="Chart" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="Profile" />
+    </group>
+</menu>

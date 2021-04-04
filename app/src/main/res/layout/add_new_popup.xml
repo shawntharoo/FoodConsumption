@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_id"
+        android:layout_width="251dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:text="New meal"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textColorHighlight="@android:color/primary_text_dark"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/newaddicon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/newaddicon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_baseline_fastfood_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <EditText
+        android:id="@+id/new_record_food_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/newaddicon"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="-28dp"
+        android:textSize="24sp"
+        android:hint="Food Name"
+        android:textAlignment="textStart"
+        android:gravity="start" />
+
+    <EditText
+        android:id="@+id/new_record_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/new_record_food_name"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="-28dp"
+        android:textSize="24sp"
+        android:hint="Food Quantity"
+        android:textAlignment="textStart"
+        android:gravity="start"
+        />
+
+    <EditText
+        android:id="@+id/new_record_ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/new_record_quantity"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="-28dp"
+        android:textSize="24sp"
+        android:hint="Ingredients"
+        android:textAlignment="textStart"
+        android:gravity="start"
+        />
+
+    <EditText
+        android:id="@+id/new_record_total_calorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/new_record_ingredients"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="-28dp"
+        android:textSize="24sp"
+        android:hint="Total Calories(KJ)"
+        android:textAlignment="textStart"
+        android:gravity="start"
+        />
+
+    <EditText
+        android:id="@+id/new_record_meal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/new_record_total_calorie"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="-28dp"
+        android:textSize="24sp"
+        android:hint="Meal Type"
+        android:textAlignment="textStart"
+        android:gravity="start" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_record_meal"
+        app:layout_constraintVertical_bias="0.292" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_record_meal"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/new_record_food_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@+id/cancelButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
